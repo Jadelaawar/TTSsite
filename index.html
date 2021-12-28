@@ -1,0 +1,427 @@
+<html>
+
+<head>
+  <title>Turtle Tribe Studio</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="img/tts.jpg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Mint</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Marketplace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Staking</a>
+          </li>
+        </ul>
+        <button class="btn me-2 btn-primary ms-lg-3">Play Now</button>
+        <button onclick="login()" class="btn me-2 btn-primary ms-lg-1" id="login">Login with Metamask</button>
+      </div>
+    </div>
+  </nav> <!-- NAVBAR ENDS-->
+
+  <!--Hero-->
+  <div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="container">
+      <div class="col-lg-7 mx-auto text-center">
+        <h1 class="display-4 text-white">TURTLE TRIBE STUDIO</h1>
+        <p class="text-white my-3">Earn passive income while helping the environment!</p>
+        <a href="#" class="btn me-2 btn-primary">MINT NOW</a>
+        <a href="#" class="btn btn-outline-light">Sake your assets</a>
+        <div class="social-icons-hero mt-4">
+          <a target="_blank" href="https://discord.gg/y26MeN2PAj"><i class='bx bxl-discord'></i></a>
+          <a target="_blank" href="#"><i class='bx bxl-twitter' ></i></i></a>
+          <a target="_blank" href="https://www.instagram.com/turtletribestudio/"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Hero-END-->
+
+  <!--about the project-->
+  <section class="row w-100 py-10 bg-light" id="Feature">
+    <div class="col-lg-6 col-img"></div>
+    <div class="col-lg-6 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <h6 class="text-primary offset-md-1"> WHO ARE WE?</h6>
+            <h1>What is Turtle Tribe?</h1>
+            <p class="text-dark my-3">
+              Turtle Tribe is the first NFT project which allows players to earn passive income whilst saving the environment simultaneously! Using the power of blockchain technology!
+            </p>
+
+            <div class="Feature d-flex mt-5">
+              <div class="iconbox me-3">
+                <i class='bx bxs-certification'></i>
+              </div>
+              <div>
+                <h5>Devoted To Helping The Environment!</h5>
+               <p>We as Turtle Tribe founders are completely focused and determined to help the environment while at the same time giving back to the community!</p>
+              </div>
+            </div>
+            <div class="Feature d-flex">
+              <div class="iconbox me-3">
+                <i class='bx bxs-certification'></i>
+              </div>
+              <div>
+                <h5>High Quality!</h5>
+               <p>Turtle Tribe NFT's are the most high quality NFT's you can find on the market. In addition, they have a very high value!</p>
+              </div>
+            </div>
+            <div class="Feature d-flex">
+              <div class="iconbox me-3">
+                <i class='bx bxs-certification'></i>
+              </div>
+              <div>
+                <h5>Our Community Matters!</h5>
+               <p>Here at Turtle Tribe we belive our community is the most important part of our project therefore all decisions will be influenced by our community!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About the project end-->
+
+<!--Partners-->
+ <section id="Our Partners">
+   <div class="partnerst">
+    <h1">Ecosystem and Partners</h1>
+   </div>
+  <div id="infinite" class="highway-slider bg-black">
+    <div class="highway-barrier">
+        <ul class="highway-lane">
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark shadowless"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+  
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+            <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+            <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+  
+        </ul>
+    </div>
+  </div>
+
+<div id="infinite" class="highway-slider bg-black">
+  <div class="highway-barrier">
+      <ul class="highway-lane">
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark shadowless"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+          <li class="highway-car ml"><a href="https://polygon.technology/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=15-QaVuFgso9i06Fg-qjxmEss5WXkCwBQ"/></a></li>
+          <li class="highway-car ml"><a href="https://www.harmony.one/" target="_blank" className="box has-background-dark has-no-box-shadow"><img src="https://drive.google.com/uc?export=view&id=1HpnfmLrbd1DMbPPa_AYxC_G8ILRWcUsw"/></a></li>
+
+      </ul>
+  </div>
+</div>
+
+</section><!--Partners-->
+
+<!--Roadmap-->
+<section class="row w-100 py-10 bg-light" id="Feature">
+  <div class="col-lg-6 col-img1"></div>
+  <div class="col-lg-6 py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <h6 class="text-primary offset-md-1">Our Process</h6>
+          <h1>Roadmap</h1>
+
+          <div class="Feature d-flex mt-5">
+            <div class="iconbox me-3">
+              <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <div>
+              <h5>0 Percent</h5>
+             <p>TurtleTribe drops a cartoon sitcom, TurtleCove, the series. Which will include 12, 5 minute episodes. 
+               To celebrate 10000 discord members, TT will hold a giveaway of 5 Turtle Tribe Nft’s and 1 ETH, 
+               to lucky discord members. Information on how to join this giveaway will be provided on the TT Discord page.</p>
+            </div>
+          </div>
+          <div class="Feature d-flex">
+            <div class="iconbox me-3">
+              <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <div>
+              <h5>20 Percent</h5>
+             <p>The official release of Custom Turtle Tribe Merch drop. Our coin $TRIBLING will be released and the tokenomics plan will begin. See in the Tokenomics tab.</p>
+            </div>
+          </div>
+          <div class="Feature d-flex">
+            <div class="iconbox me-3">
+              <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <div>
+              <h5>40 Percent</h5>
+             <p>Our NFT’s will drop and for the first hour only whitelisted people will be able to mint the NFT’s. The mint will be hosted on our site and people will use 
+               $TRIBLING to mint our NFT’s. Our NFT marketplace will also be released!</p>
+            </div>
+          </div>
+          <div class="Feature d-flex">
+            <div class="iconbox me-3">
+              <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <div>
+              <h5>60 Percent</h5>
+             <p>TurtleTribe introduces staking for 2 weeks to earn the remaining 60% of the $TRIBLING locked away in the reward pool. Check the Staking tab for more info.</p>
+            </div>
+          </div>
+          <div class="Feature d-flex">
+            <div class="iconbox me-3">
+              <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <div>
+              <h5>80 Percent</h5>
+             <p>80% - TurtleCove, a Play to earn PVP game launched. Holders of Turtle Tribe NFT’s will be able to compete in this battle royale game. 
+               There will be two types of game modes ranked and weekly play. Check game tab for more info.</p>
+            </div>
+          </div>
+          <div class="Feature d-flex">
+            <div class="iconbox me-3">
+              <i class='bx bx-right-arrow-alt'></i>
+            </div>
+            <div>
+              <h5>100 Percent</h5>
+             <p>100% - Rolex Submarine giveaway and the website and details for our second NFT project will be released.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Roadmap End-->
+
+  <!--Reasons-->
+  <section id="section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <h1> WHY INVEST WITH US</h1>
+          <p>Out of all the project out there why should you invest with us? Here is why!</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="iconbox">
+              <i class='bx bx-water'></i>
+            </div>
+            <h5 class="mt-4 mb-2">The First Environmentally Friendly NFT Project!</h5>
+            <p>Turtle Tribe is the first project determined to help the environment. In fact, 20% of all profits we make will go to charities
+              determined to help the environment!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="iconbox">
+              <i class='bx bxs-analyse'></i>
+            </div>
+            <h5 class="mt-4 mb-2">High Utility!</h5>
+            <p>We as Turtle Tribe founders put most of our focus on the utiliy of our NFT’s. As a result, TT NFT's are not random JPEG images on your computer but very useful assets that can help you generate some income!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="iconbox">
+              <i class='bx bx-bullseye'></i>
+            </div>
+            <h5 class="mt-4 mb-2">We Don't Make Promises We Can't Keep!</h5>
+            <p>Many projects nowadays promise millions of dollars in passive income back to their community, as amazing as that sounds
+              it is clearly not possible. We on the other hand stick to our promises!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="iconbox">
+              <i class='bx bx-trending-up'></i>
+            </div>
+            <h5 class="mt-4 mb-2">We Are Here To Stay</h5>
+            <p>Unlike other developers who make NFT collections for a quick profit we have long term visions in mind!
+              In fact, we plan to release a SECOND NFT collection after this one wich will bring more value to The Turtle Tribe
+              as well as more ways our community can benefit!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="iconbox">
+              <i class='bx bxs-donate-heart'></i>
+            </div>
+            <h5 class="mt-4 mb-2">We Listen To Our Community!</h5>
+            <p>We will be collecting ideas from members of our community and all people who are part of our community can vote whether or not an idea will be implemented! Details on this will be given on our discordand and
+              all other socil media!
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service card-effect">
+            <div class="iconbox">
+              <i class='bx bx-money'></i>
+            </div>
+            <h5 class="mt-4 mb-2">Earn Passive Income!</h5>
+            <p>While we are very focused on helping the environment our community is in our best interests.
+              We will be releasing staking as well as a game based around the NFT's so they are valuable assets! Check our roadmap for more info!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!--Reasons-end-->
+
+  <!--Team-->
+  <section id="team">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <h6 class="text-primary">TEAM</h6>
+          <h1>Meet Our Crew Members</h1>
+          <p>Meet the great minds who are responsible for this amazing project</p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member card-effect">
+            <img src="img/Doudi.png" alt="">
+            <h5 class="mb-0 mt-4"> El Walid Mourad</h5>
+            <p>Founder/</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class='bx bxl-discord'></i>
+              </a>
+              <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member card-effect">
+            <img src="img/Jad.png" alt="">
+            <h5 class="mb-0 mt-4"> Jad El Aawar</h5>
+            <p>Founder/Head Developer</p>
+            <div class="social-icons">
+              <a href="#"><i class='bx bxl-discord'></i></a>
+              <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member card-effect">
+            <img src="img/Aboudi.png" alt="">
+            <h5 class="mb-0 mt-4"> Aboudi</h5>
+            <p>Founder</p>
+            <div class="social-icons">
+              <a href="#"><i class='bx bxl-discord'></i></a>
+              <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-member card-effect">
+            <img src="img/Adrian.png" alt="">
+            <h5 class="mb-0 mt-4"> Adrian Bou Ghannam</h5>
+            <p>Developer</p>
+            <div class="social-icons">
+              <a href="#"><i class='bx bxl-discord'></i></a>
+              <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> <!--Team-end-->
+
+ <footer>
+  <div class="footer vh-100 d-flex align-items-center" id="footer">
+    <div class="container">
+      <div class="col-lg-7 mx-auto text-center">
+        <h1 class="display-30 text-white">TURTLE TRIBE STUDIO</h1>
+        <div class="social-icons">
+          <a href="#"><i class='bx bxl-discord'></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </footer>
+
+  <script>
+    /* Moralis init code */
+    const serverUrl = "https://fj3rkogn8df7.usemoralis.com:2053/server";
+    const appId = "hk2ATrF7vTrR617Cq0tiFLDWyPWlqAHSzKhsP53Z";
+    Moralis.start({ serverUrl, appId });
+
+    async function login() {
+      const user = await Moralis.authenticate()
+      document.getElementById('login').innerHTML = user.get('ethAddress')
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

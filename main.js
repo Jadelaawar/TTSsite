@@ -1,0 +1,1 @@
+gsap.fromTo('.display-4', {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 1})
